@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QWERTY Keyboard</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif; 
+      display: flex;
+      padding: 250px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .keyboard-contaniner {
+      background-color: rgb(20, 1, 87);
+      padding: 15px;
+      border-radius: 15px;
+      display: inline-block;
+    }
+
+    .row {
+      display: flex;
+      gap: 4px;
+      justify-content: center;
+      margin: 2px 1;
+    }
+
+    .key {
+      background-color: rgb(22, 114, 189);
+      color: rgb(255, 255, 255);
+      padding: 17px 22px;
+      margin: 5px;
+      border: none;
+      border-radius: 10px;
+      font-size: medium;
+      text-align: center;
+      box-shadow: inset 0 -7px 0 rgba(255, 255, 255, 0.5);
+      transition: background-color 0.2s, box-shadow 0.2s, transform 0.1s;
+      cursor: pointer;
+    }
+
+    .key:hover {
+      background-color: #000000;
+    }
+
+    .key:active {
+      background-color: #a0d4ff;
+      box-shadow: 0 0 10px #fffefe;
+      transform: scale(0.9); 
+    }
+
+    .key.wide { 
+      min-width: 60px;
+      color: rgb(246, 252, 252);
+      background-color: #035875 ;
+     }
+
+    .key.extra-wide {
+      min-width: 97px;
+      color: rgb(255, 255, 255);
+      background-color: #035875;
+     }
+
+     .key.extra-wide:hover {
+      background-color: rgb(22, 114, 189);
+
+     }
+
+    .key.space {
+       min-width: 300px;
+       color: #ffffff;
+       background-color: #000000;
+      }
+
+      .key.space:hover {
+      background-color: #035875;
+      }
+
+    .tilde-key {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 13.5px 22px;
+      font-size: 14px;
+      line-height: 1.3;
+    }
+
+    .tilde-key .top {
+      font-size: 13px;
+    }
+
+    .tilde-key .bottom {
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="keyboard-contaniner">
+    <div class="row">
+      <div class="key">Esc</div>
+      <div class="key">F1</div>
+      <div class="key">F2</div>
+      <div class="key">F3</div>
+      <div class="key">F4</div>
+      <div class="key">F5</div>
+      <div class="key">F6</div>
+      <div class="key">F7</div>
+      <div class="key">F8</div>
+      <div class="key">F9</div>
+      <div class="key">F10</div>
+      <div class="key">F11</div>
+      <div class="key">F12</div>
+    </div>
+
+    <div class="row">
+      <div class="key tilde-key">
+        <span class="top">~</span
+          ><span class="bottom">`</span>
+        </div>
+
+      <div class="key tilde-key">
+        <span class="top">!</span>
+        <span class="bottom">1</span>
+      </div>
+
+      <div class="key tilde-key">
+        <span class="top">@</span>
+        <span class="bottom">2</span>
+      </div>
+
+      <div class="key tilde-key">
+        <span class="top">#</span>
+        <span class="bottom">3</span>
+      </div>
+
+      <div class="key tilde-key">
+        <span class="top">$</span>
+        <span class="bottom">4</span>
+      </div>
+
+      <div class="key tilde-key">
+        <span class="top">%</span>
+        <span class="bottom">5</span>
+      </div>
+
+      <div class="key tilde-key">
+        <span class="top">^</span>
+        <span class="bottom">6</span>
+      </div>
+
+      <div class="key tilde-key">
+        <span class="top">&</span>
+        <span class="bottom">7</span>
+      </div>
+
+      <div class="key tilde-key">
+        <span class="top">*</span>
+        <span class="bottom">8</span>
+      </div>
+
+      <div class="key tilde-key">
+        <span class="top">(</span>
+        <span class="bottom">9</span>
+      </div>
+
+      <div class="key tilde-key">
+        <span class="top">)</span>
+        <span class="bottom">0</span>
+      </div>
+
+      <div class="key tilde-key">
+        <span class="top">_</span>
+        <span class="bottom">-</span>
+      </div>
+
+      <div class="key tilde-key">
+        <span class="top">+</span>
+        <span class="bottom">=</span>
+      </div>
+
+      <div class="key wide">Backspace</div>
+    </div>
+
+    <div class="row">
+      <div class="key wide">Tab</div>
+      <div class="key">Q</div>
+      <div class="key">W</div>
+      <div class="key">E</div>
+      <div class="key">R</div>
+      <div class="key">T</div>
+      <div class="key">Y</div>
+      <div class="key">U</div>
+      <div class="key">I</div>
+      <div class="key">O</div>
+      <div class="key">P</div>
+
+      <div class="key tilde-key">
+        <span class="top">{</span>
+          <span class="bottom">[</span>
+        </div>
+
+      <div class="key tilde-key">
+        <span class="top">}</span>
+        <span class="bottom">]</span>
+      </div>
+
+      <div class="key tilde-key">
+        <span class="top">|</span>
+        <span class="bottom">\</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="key wide">Caps Lock</div>
+      <div class="key">A</div>
+      <div class="key">S</div>
+      <div class="key">D</div>
+      <div class="key">F</div>
+      <div class="key">G</div>
+      <div class="key">H</div>
+      <div class="key">J</div>
+      <div class="key">K</div>
+      <div class="key">L</div>
+      <div class="key tilde-key">
+        <span class = "top">:</span>
+        <span class = "top">;</span>
+      </div>
+      <div class="key tilde-key">
+        <span class = "top">"</span>
+        <span class = "top">'</span>
+      </div>
+      <div class="key wide">Enter</div>
+    </div>
+
+    <div class="row">
+      <div class="key extra-wide">Shift</div>
+      <div class="key">Z</div>
+      <div class="key">X</div>
+      <div class="key">C</div>
+      <div class="key">V</div>
+      <div class="key">B</div>
+      <div class="key">N</div>
+      <div class="key">M</div>
+      <div class="key tilde-key">
+        <span class = "top">< </span>
+        <span class = "bottom">,</span>
+      </div>
+
+      <div class="key tilde-key">
+        <span class = "top">></span>
+        <span class = "bottom">.</span>
+      </div>
+      <div class="key tilde-key">
+        <span class = "top">?</span>
+        <span class = "bottom">/</span>
+      </div>
+      <div class="key extra-wide">Shift</div>
+    </div>
+ 
+    <div class="row">
+      <div class="key">CTRL</div>
+      <div class="key">ALT</div>
+      <div class="key">WIN</div>
+      <div class="key">ALT</div>
+      <div class="key space" >Space</div>
+      <div class="key">ALT</div>
+      <div class="key">FN</div>
+      <div class="key">CTRL</div>
+    </div>
+  </div>
+
+</body>
+</html>
